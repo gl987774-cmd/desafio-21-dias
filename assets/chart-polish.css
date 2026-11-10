@@ -1,0 +1,48 @@
+.chart-card {
+  padding: 16px 14px 12px;
+  background:
+    radial-gradient(ellipse at 50% 0, rgba(221, 87, 141, 0.07), transparent 62%),
+    #fff;
+  border: 1px solid #f1e4eb;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+}
+
+.chart-title {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.progress-chart polyline:first-of-type {
+  filter: drop-shadow(0 2px 3px rgba(221, 87, 141, 0.22));
+  stroke-width: 4px;
+}
+
+.progress-chart polyline:not(:first-of-type) {
+  opacity: 0.72;
+  stroke-width: 2.5px;
+}
+
+.chart-gridline {
+  stroke: #e9edf3;
+  stroke-dasharray: 2 5;
+  stroke-linecap: round;
+}
+
+.chart-label {
+  fill: #94a3b8;
+}
+
+.chart-legend {
+  gap: 12px;
+  margin-top: 2px;
+}
+
+.chart-legend i {
+  width: 9px;
+  height: 9px;
+}
+
+.price-daily:has(> strong:empty) {
+  display: none;
+}
